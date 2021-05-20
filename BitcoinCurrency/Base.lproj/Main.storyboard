@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BitcoinCurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-HV-Pxg">
+                                <rect key="frame" x="0.0" y="540" width="0.0" height="248"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w5O-LJ-pHi">
+                                <rect key="frame" x="67" y="64" width="280" height="360"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEw-Pl-WMq">
+                                <rect key="frame" x="0.0" y="434" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rhI-HV-Pxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1TA-PU-PEd"/>
+                            <constraint firstItem="XEw-Pl-WMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2E6-i9-RAt"/>
+                            <constraint firstItem="w5O-LJ-pHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="4dH-HW-1dD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XEw-Pl-WMq" secondAttribute="trailing" id="Jel-T7-LqL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w5O-LJ-pHi" secondAttribute="trailing" constant="67" id="OH7-js-2Ep"/>
+                            <constraint firstItem="rhI-HV-Pxg" firstAttribute="top" secondItem="XEw-Pl-WMq" secondAttribute="bottom" constant="76" id="UVr-js-Eaq"/>
+                            <constraint firstAttribute="bottom" secondItem="rhI-HV-Pxg" secondAttribute="bottom" constant="108" id="YRT-bu-Ozp"/>
+                            <constraint firstItem="rhI-HV-Pxg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bBy-yG-L8m"/>
+                            <constraint firstItem="XEw-Pl-WMq" firstAttribute="top" secondItem="w5O-LJ-pHi" secondAttribute="bottom" constant="10" id="lV1-N0-jrl"/>
+                            <constraint firstItem="w5O-LJ-pHi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lsY-er-bI8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Price" destination="XEw-Pl-WMq" id="3Bv-dV-tta"/>
+                        <outlet property="coinType" destination="rhI-HV-Pxg" id="8rF-KP-qu5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoin.jpg" width="480" height="270"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
